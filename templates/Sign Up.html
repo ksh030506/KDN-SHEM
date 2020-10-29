@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400, 700" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/css3.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/supersized.css') }}"">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}">
+  </head>
+  <body>
+    <div class="page-container">
+      <img src="{{ url_for('static', filename='image/shem_logo.png') }}" alt="tistory_logo" width="125px" height="auto" style="display:inline;" />
+      <div style="height: 50px;"> </div>
+      <h1>SignUp</h1>
+      <form actiom="" method="post">
+        <input type="text" name="ID" class="username" placeholder="ID" />
+        <input type="text" name="name" class="username" placeholder="NAME" />
+        <input type="password" name="PW" class="username" placeholder="PASSWORD" />
+        <input type="password" name="PW" class="username" placeholder="password again" />
+        <button type="submit" onclick="location.href='login.html'">SignUp</button>
+        <div class="error"><span>+</span></div>
+      </form>
+    </div>
+  </body>
+</html>
